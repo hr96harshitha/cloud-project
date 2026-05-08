@@ -23,12 +23,12 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: #ffffff;
+  color: #000000;
   position: relative;
 }
 
 .App-link {
-  color: #ffff00;
+  color: #000000;
 }
 
 .clouds {
