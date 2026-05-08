@@ -2,9 +2,15 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const isStudentMode=process.env.REACT_APP_KEY_USE_MODE.toString()==="Student Portal";
+
   return (
+    
+
     <div className="App">
       <header className="App-header">
+        <h1>{isStudentMode ? "Student Portal":" Faculty Portal"}</h1>
+        <h2>{process.env.REACT_APP_KEY_WELCOME_MSG}</h2>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -19,6 +25,9 @@ function App() {
 
         </a>
         <h1>V ~ {process.env.REACT_APP_KEY_VERSION}</h1>
+        <h2>{process.env.REACT_APP_KEY_SECRET}</h2>
+
+        
       </header>
     </div>
   );
