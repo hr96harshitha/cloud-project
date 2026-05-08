@@ -10,7 +10,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>{isStudentMode ? "Student Portal":" Faculty Portal"}</h1>
-        <h2>{process.env.REACT_APP_KEY_WELCOME_MSG}</h2>
+        <h2 className="scrolling-line">
+          <span>{process.env.REACT_APP_KEY_WELCOME_MSG}</span>
+        </h2>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
