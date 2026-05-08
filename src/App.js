@@ -9,6 +9,12 @@ function App() {
 
     <div className="App">
       <header className="App-header">
+        <div className="clouds">
+          <div className="cloud cloud1"></div>
+          <div className="cloud cloud2"></div>
+          <div className="cloud cloud3"></div>
+          <div className="cloud cloud4"></div>
+        </div>
         <h1>{isStudentMode ? "Student Portal":" Faculty Portal"}</h1>
         <h2 className="scrolling-line">
           <span>{process.env.REACT_APP_KEY_WELCOME_MSG}</span>
